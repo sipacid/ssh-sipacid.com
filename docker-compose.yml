@@ -1,0 +1,12 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - keys:/keys
+    ports:
+      - "22:2222"
+
+volumes:
+  keys:
