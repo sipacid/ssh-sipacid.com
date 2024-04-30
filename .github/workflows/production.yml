@@ -35,9 +35,6 @@ jobs:
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: ${{ secrets.REMOTE_TARGET }}
-          SCRIPT_BEFORE: |
-            cd ${{ secrets.REMOTE_TARGET }}
-            docker compose down
           SCRIPT_AFTER: |
             cd ${{ secrets.REMOTE_TARGET }}
             docker compose up -d --build
