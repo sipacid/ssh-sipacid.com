@@ -16,7 +16,7 @@ import (
 )
 
 const (
-	port       = ":1001"
+	port       = ":2222"
 	maxTimeout = 3 * time.Minute
 )
 
